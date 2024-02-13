@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Language Confidence Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <h1>Programming Language Confidence Tracker</h1>
+    <!--    <button class="pdf" id="themeToggle">Toggle Dark Theme</button> -->
+
+    <form id="languageForm">
+      <label for="languageInput">Programming Language:</label>
+      <input
+        type="text"
+        id="languageInput"
+        placeholder="Enter a programming language"
+      />
+      <label for="confidenceInput">Confidence (%):</label>
+      <input
+        type="number"
+        id="confidenceInput"
+        min="0"
+        max="100"
+        placeholder="Enter confidence level"
+      />
+      <button type="submit">Add Language</button>
+    </form>
+
+    <table id="languageTable">
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Confidence (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table body will be dynamically populated -->
+      </tbody>
+    </table>
+    <button onclick="jsPDF();" class="pdf" id="downloadPdf">
+      Download PDF
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

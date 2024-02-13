@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.light-theme body {
+  background-color: #ffffff;
+  color: #333333;
+}
+.dark-theme body {
+  background-color: #120101;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+form {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px darkgreen solid;
+  border-radius: 10px;
+}
+
+th {
+  border: 2px solid #0da105;
+  padding: 8px;
+  text-align: center;
+}
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="number"] {
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1.7px darkgreen solid;
+  padding: 0.8rem;
+}
+button {
+  margin-bottom: 10px;
+  border: 1px darkgreen solid;
+  border-radius: 30px;
+  padding: 0.7rem;
+  background-image: linear-gradient(to left, #2a9134, #054a29);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+button:hover {
+  background-image: linear-gradient(to left, #054a29, #2a9134);
+  transition: ease;
+}
+.pdf {
+  margin-bottom: 10px;
+  border: 1px darkgreen solid;
+  border-radius: 10px;
+  padding: 0.3rem;
+  background-image: linear-gradient(to left, #2a9134, #054a29);
+  color: white;
+
+  font-size: 7px;
+}
+@media only screen and (max-width: 768px) {
+  /* Styles for smaller devices */
+  /* For example: */
+  body {
+    font-size: 14px;
+  }
+  /* Add any other styles you want to apply to smaller devices */
+}
